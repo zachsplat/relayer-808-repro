@@ -1,0 +1,35 @@
+services:
+  anvil:
+    image: ghcr.io/foundry-rs/foundry:latest
+    container_name: repro808-anvil
+    entrypoint: ["anvil"]
+    command: ["--host", "0.0.0.0", "--port", "8545", "--chain-id", "31337", "--no-mining", "--base-fee", "100000000", "--gas-limit", "30000000", "--order", "fifo"]
+    ports:
+      - "127.0.0.1:18545:8545"
+  redis:
+    image: redis:bookworm
+    container_name: repro808-redis
+  receiver:
+    image: python:3.12-alpine
+    container_name: repro808-receiver
+    command: ["python", "/receiver.py", "/receiver.log"]
+    volumes:
+      - ./receiver.py:/receiver.py:ro
+      - ./logs/receiver.log:/receiver.log
+  relayer:
+    image: openzeppelin/openzeppelin-relayer:v1.8.0
+    container_name: repro808-relayer
+    depends_on: [redis, anvil]
+    environment:
+      REDIS_URL: redis://redis:6379
+      API_KEY: repro808-api-key-0123456789abcdef
+      WEBHOOK_SIGNING_KEY: repro808-webhook-signing-key-0123456789abcdef
+      KEYSTORE_PASSPHRASE: "Repro808Pass!"
+      IN_DOCKER: "true"
+      LOG_LEVEL: debug
+      RPC_BLOCK_PRIVATE_IPS: "false"
+    ports:
+      - "127.0.0.1:18081:8080"
+    volumes:
+      - ./config:/app/config:ro
+      - ./logs:/app/logs

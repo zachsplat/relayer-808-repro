@@ -1,0 +1,39 @@
+{
+  "relayers": [
+    {
+      "id": "anvil-capped",
+      "name": "anvil capped relayer (gas_price_cap repro)",
+      "network": "localhost-anvil-docker",
+      "paused": false,
+      "notification_id": "repro-webhook",
+      "signer_id": "anvil0",
+      "network_type": "evm",
+      "policies": {
+        "min_balance": 0,
+        "gas_price_cap": 800000000,
+        "eip1559_pricing": true
+      }
+    }
+  ],
+  "signers": [
+    {"id": "anvil0", "type": "local", "config": {"path": "config/keys/anvil0.json", "passphrase": {"type": "env", "value": "KEYSTORE_PASSPHRASE"}}}
+  ],
+  "notifications": [
+    {"id": "repro-webhook", "type": "webhook", "url": "http://receiver:8099/relayer", "signing_key": {"type": "env", "value": "WEBHOOK_SIGNING_KEY"}}
+  ],
+  "networks": [
+    {
+      "type": "evm",
+      "network": "localhost-anvil-docker",
+      "chain_id": 31337,
+      "required_confirmations": 1,
+      "symbol": "ETH",
+      "rpc_urls": ["http://anvil:8545"],
+      "explorer_urls": [],
+      "average_blocktime_ms": 1000,
+      "is_testnet": true,
+      "features": ["eip1559"]
+    }
+  ],
+  "plugins": []
+}

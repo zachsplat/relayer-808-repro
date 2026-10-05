@@ -1,0 +1,67 @@
+20:54:53 === repro #808 start; Relayer image openzeppelin/openzeppelin-relayer:latest (1.8.0), anvil no-mining
+20:54:53 baseline base fee 100000000 wei, cap 800000000 wei
+20:54:53 submit -> 200 {"success": true, "data": {"id": "bd75e229-5637-4987-9ed8-5197328bdc57", "hash": null, "status": "pending", "status_reason": null, "created_at": "2026-10-04T20:54:53.390952102+00:00", "sent_at": null, "confirmed_at": null, "gas_price": null, "gas_limit": 21000, "nonce": null, "value": "0x1", "from":
+20:54:53 state ('pending', None, [], None, None, None)
+20:54:56 state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None)
+20:54:56 anvil pool pending/queued: (1, 0)
+20:54:56 --- spike: base fee 5 gwei for 90 s
+20:55:02 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:08 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:14 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:20 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:26 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:32 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:38 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:44 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:50 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:55:56 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:56:02 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:56:08 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:56:14 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:56:20 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:56:26 spike state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0)
+20:56:26 dropTransaction 0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2 -> None
+20:56:26 after eviction pool (0, 0)
+20:56:26 --- recovery: base fee 0.1 gwei, mining every 5 s for up to 20 min
+20:56:57 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+20:57:27 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+20:57:57 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+20:58:27 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+20:58:57 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+20:59:27 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+20:59:58 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:00:28 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:00:58 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:01:28 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:01:58 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:02:28 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:02:58 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:03:29 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:03:59 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:04:29 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:04:59 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:05:29 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:05:59 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:06:29 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:07:00 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:07:30 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:08:00 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:08:30 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:09:00 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:09:30 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:10:01 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:10:31 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:11:01 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:11:31 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:11:56 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:12:27 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:12:57 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:13:27 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:13:57 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:14:27 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:14:57 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:15:27 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:15:58 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:16:28 recovery state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None); pool (0, 0); base fee 100000000
+21:16:28 === VERDICT: STUCK (not mined within 20 min after recovery)
+21:16:28 final state ('submitted', '0xe510c5297600bd75afc9b4412094f67b17baf1a3ddc3055b4a99d3a681beb7c2', [], '800000000', '800000000', None)

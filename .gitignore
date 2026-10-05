@@ -1,0 +1,3 @@
+config/keys/
+logs/receiver.log
+__pycache__/
