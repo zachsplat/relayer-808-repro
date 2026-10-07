@@ -2,6 +2,8 @@
 
 `gas_price_cap` leaves a transaction stuck after a gas spike: https://github.com/OpenZeppelin/openzeppelin-relayer/issues/808
 
+Write-up: https://nonceworks.com/notes/relayer-gas-price-cap-stuck-808.html
+
 This is the setup behind my comment on that issue. It runs the unmodified `openzeppelin/openzeppelin-relayer:v1.8.0` image against anvil in no-mining mode, so the test controls the base fee and block production, and drives the whole scenario with one Python script.
 
 ## What it shows
